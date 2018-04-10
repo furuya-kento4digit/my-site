@@ -1,0 +1,96 @@
+@charset "UTF-8";
+body {
+  font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", "Hiragino Kaku Gothic ProN", "San Francisco",  Arial, Helvetica, "游ゴシック", YuGothic, Meiryo, sans-serif;
+  font-size: 24px;
+  color: #323232;
+}
+
+.dropshadow {
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.paralax {
+  text-align: center;
+  font-weight: bold;
+}
+
+.paralax section {
+  padding: 5vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec {
+  background: #fff100;
+}
+
+.sec p {
+  font-size: 6vw;
+}
+
+.sec .icon {
+  font-size: 15vw;
+}
+
+.title {
+  padding: 10vw;
+  height: calc(100vh - 20vh);
+}
+
+.title h1 {
+  font-size: 9vw;
+  text-align: left;
+}
+
+.ad {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 8em;
+}
+
+.age {
+  background-color: #3D3D3D;
+  background-image: url(../img/dot.png);
+  background-repeat: repeat;
+  font-size: 5em;
+  text-align: center;
+  color: #fff;
+}
+
+.age h2 {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 6vw;
+  top: 50vh;
+  opacity: 0.4;
+}
+
+.icon {
+  margin-bottom: 4vw;
+}
+
+.icon i {
+  position: relative;
+}
+
+#game,
+#tv,
+#child {
+  opacity: 0;
+  top: 50vh;
+}
+
+i#game {
+  font-size: 10vw;
+}
+
+i#child {
+  font-size: 7vw;
+  top: -4.5vw;
+  left: -17vw;
+}
+/*# sourceMappingURL=style.css.map */

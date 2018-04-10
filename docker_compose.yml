@@ -1,0 +1,14 @@
+web:
+  # 公式のdockerイメージ
+  image: nginx 
+  volumes:
+   # ホスト側のnginxの設定ファイルのテンプレートをコンテナ側にマウント
+   - ./mysite.template:/etc/nginx/conf.d/mysite.template
+   # コンテンツを含むディレクトリをマウント
+   - /dev/practice/my-site:/var/www
+  ports:
+  # ポートを設定(ホスト:ゲストの順)
+   - "8080:80"
+  environment:
+   - ROOT=/var/www/
+  command: /bin/sh -c "envsubst '$$ROOT' < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
